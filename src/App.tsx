@@ -12,6 +12,7 @@ function App() {
             <h1 className="title">Pokedex Mini</h1>
             <div className="nes-field">
                 <input type="text" id="name_field" placeholder="insert pokemon name..." value={input} onInput={e => {
+                    // @ts-ignore
                     setInput(e.target.value);
                 }} className="nes-input" autoFocus/>
             </div>

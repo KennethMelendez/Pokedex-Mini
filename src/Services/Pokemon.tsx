@@ -51,6 +51,7 @@ function Pokemon(props : Props) {
 
                               {
                                 pokemon?.types?.map(
+                                    // @ts-ignore
                                     (type, idx) => {
                                         return (
                                             <div key={idx}>{type.type.name} type</div>
